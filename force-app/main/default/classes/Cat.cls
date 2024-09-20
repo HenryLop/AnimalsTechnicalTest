@@ -1,4 +1,3 @@
-// Cat.cls
 public class Cat extends Animal {
     public override void makeNoise() {
         meow();

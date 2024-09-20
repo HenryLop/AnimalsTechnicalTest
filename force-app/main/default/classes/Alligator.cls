@@ -1,15 +1,18 @@
-// Alligator.cls
 public class Alligator extends Animal {
     public override void makeNoise() {
         hiss();
     }
 
     public override void move() {
-        hiss(); // Based on the original code
+        hiss();
     }
 
     public override void swim() {
         doSwim();
+    }
+
+    public override void attack(){
+        bite();
     }
 
     private void hiss() {
@@ -20,5 +23,10 @@ public class Alligator extends Animal {
     private void doSwim() {
         // Swimming behavior
         System.debug('Alligator is swimming!');
+    }
+
+    private void bite(){
+        // Attacking behaviour
+        System.debug('The Alligator is Biting!');
     }
 }

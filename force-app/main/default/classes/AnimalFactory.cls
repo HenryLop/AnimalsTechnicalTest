@@ -1,4 +1,3 @@
-// AnimalFactory.cls
 public class AnimalFactory {
     public static Animal createAnimal(String animalType) {
         if (animalType == 'Lion') {

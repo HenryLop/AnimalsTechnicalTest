@@ -1,4 +1,3 @@
-// Cow.cls
 public class Cow extends Animal {
     public override void makeNoise() {
         moo();

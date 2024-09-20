@@ -9,6 +9,7 @@ public class AnimalTest {
             animal.makeNoise();
             animal.move();
             animal.swim();
+            animal.attack();
             System.debug('-----------------------');
         }
     }

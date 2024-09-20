@@ -1,4 +1,3 @@
-// Bear.cls
 public class Bear extends Animal {
     public override void makeNoise() {
         growl();
@@ -10,6 +9,10 @@ public class Bear extends Animal {
 
     public override void swim() {
         doSwim();
+    }
+
+    public override void attack(){
+        useClaws();
     }
 
     private void growl() {
@@ -25,5 +28,10 @@ public class Bear extends Animal {
     private void doSwim() {
         // Swimming behavior
         System.debug('Bear is swimming!');
+    }
+
+    private void useClaws(){
+        // Attacking behaviour
+        System.debug('The Bear is scratching!');
     }
 }
