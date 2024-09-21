@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Account List">
+        <template if:true={accounts}>
+            <lightning-datatable
+                key-field="Id"
+                data={accounts}
+                columns={columns}
+                hide-checkbox-column
+                onrowaction={handleRowAction}>
+            </lightning-datatable>
+        </template>
+        <template if:true={error}>
+            <p class="slds-text-color_error">{error}</p>
+        </template>
+    </lightning-card>
+
+    <!-- Display the contact list when an account is selected -->
+    <template if:true={selectedAccountId}>
+        <c-contact-list account-id={selectedAccountId}></c-contact-list>
+    </template>
+    <template if:false={selectedAccountId}>
+        <p>Please select an account to view contacts.</p>
+    </template>
+</template>
