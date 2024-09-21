@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Contact List">
+        <template if:true={contacts}>
+            <lightning-datatable
+                key-field="Id"
+                data={contacts}
+                columns={columns}
+                hide-checkbox-column>
+            </lightning-datatable>
+        </template>
+        <template if:true={error}>
+            <p class="slds-text-color_error">{error}</p>
+        </template>
+        <template if:true={noContacts}>
+            <p>No contacts found for the selected account.</p>
+        </template>
+    </lightning-card>
+</template>
